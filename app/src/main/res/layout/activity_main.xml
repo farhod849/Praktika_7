@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Hello"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поздороваться"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        android:id="@+id/textcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Я нажал кнопку  раз"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <Button
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textcount"
+        android:id="@+id/buttoncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажми меня!"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
